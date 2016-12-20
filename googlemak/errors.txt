@@ -1,0 +1,13 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 20: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
+    show magi_tears at Position(xpos=0.5, xanchor=1.1, ypos=1.3, yanchor=0.53)
+    ^
+
+File "game/script.rpy", line 26: Line is indented, but the preceding with statement statement does not expect a block. Please check this line's indentation.
+    show deni_blush at Position(xpos=0.59, xanchor=0.0, ypos=1.3, yanchor=1.2)
+    ^
+
+Ren'Py Version: Ren'Py 6.99.11.1749
