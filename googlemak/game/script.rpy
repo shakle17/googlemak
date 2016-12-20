@@ -73,8 +73,8 @@ label magi_question:
         "Време е да им ја соопштам својата одлука на пријателите.."
         "... одам за Америка.":
 
-            jump deni_vilma
+            jump dejan
 
         "... останувам во Македонија.":
 
-            jump deni_vilma
+            jump deni_vilmа
