@@ -7,6 +7,8 @@
 define magi = Character("Магдалена")
 define deni = Character("Дени")
 define vilma = Character("Вилма")
+define ivan = Character("Иван")
+define aristotel = Character("Аристотел")
 
 # BACKGROUNDS
 image magi_room = "backgrounds/magi_room.png"
@@ -73,8 +75,8 @@ label magi_question:
         "Време е да им ја соопштам својата одлука на пријателите.."
         "... одам за Америка.":
 
-            jump dejan
+            jump next_day
 
         "... останувам во Македонија.":
 
-            jump deni_vilmа
+            jump next_day
