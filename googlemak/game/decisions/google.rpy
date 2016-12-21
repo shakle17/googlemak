@@ -84,7 +84,7 @@ label aristotel_office:
 
         "... ќе продолжам со Аристотел.":
 
-            jump aristotel_office
+            jump join_aristotel
 
 label join_ivan:
     scene google_stairs
@@ -115,6 +115,33 @@ label google_lib:
     ivan "А сега можеш да почнеш да читаш материјали за quasi-Newton (Backpropagation алгоритми) и на крајот на недела сакам да ги чујам твоите импресии на оваа тема."
     jump google_lib
 
+label join_aristotel:
+
+    scene aristotel_office
+    with fade
+    show aristotel1 at Position(xpos=0.2,ypos=1.2)
+    show magi_default_med at Position(xpos=0.6,ypos=1.5)
+    show ivan_smile2_med at Position(xpos=0.85,ypos=1.5)
+
+    magi "Бидејќи компресија на слики е моја специјалност, ќе продолжам со вас господине Аристотел"
+    ivan "Во ред тогаш, ќе се оставам сами да позборувате за проектот на кој што ќе работиш."
+    aristotel "Се гледаме подоцна Иван"
+    hide ivan_smile2_med
+    aristotel "Мило ми е што го одбра овој пат. Ти ветувам дека нема да се разочараш."
+    aristotel "Ти ќе работиш со мене на еден интересен проект кој се очекува да стане еден од најдобрите продукти на Google"
+    magi "Тоа е одлично. Се надевам дека ќе можам да се справам со одговорноста"
+    aristotel "Не грижи се за тоа, секогаш можеш да се обратиш кај мене за помош"
+    magi "Ти благодарам"
+    aristotel "Сега оди дома и одмори се бидејќи утре е голем ден за тебе. Почнуваш една кариера каде само небото ти е граница"
+    magi "Ти благодарам, се гледам утре"
+    aristotel "Се гледаме"
+
+    scene black_screen
+    with fade
+    "...5 години подоцна"
+    jump second_end
+
+
 label google_lib:
     scene black_screen
     with fade
@@ -134,4 +161,21 @@ label first_end:
             pos (655,2.5)
             linear 30.0 zoom 3.0 pos (1000, 5.5)
     magi "... ова е новo поглавје во мојот живот , моите родители ќе бидат многу среќни кога ќе им ја соопштам оваа вест !!!"
+    return 
+
+
+label second_end:
+    scene roof_top
+    with fade
+    show magi_winking at Position(ypos=2.5)
+    magi "Веќе 5 години поминаа како работам овде."
+    magi "Се сеќавам на првио работен ден и колку бев исплашена од одговорноста, но ете, 5 години подоцна стравот го нема, а јас постигнав голем напредок во мојата кариера."
+    with dissolve
+    show vilma_winking at Position(xpos=0.2,ypos=2.5)
+    show deni_happy_anim at Position(xpos=0.8,ypos=1.5)
+    show magi_winking with dissolve:
+            pos (655,2.5)
+            linear 30.0 zoom 3.0 pos (1000, 5.5)
+    magi "Сетоа ова можеби немаше да го постигнам доколку моите најдобри пријатели, Дени и Вилма не веруваа во мене и не ме поддржаа во секоја моја одлука."
+    magi "За тоа ќе им бидам вечно благодарна"
     return 

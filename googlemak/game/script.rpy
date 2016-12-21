@@ -79,4 +79,4 @@ label magi_question:
 
         "... останувам во Македонија.":
 
-            jump next_day
+            jump macedonia
